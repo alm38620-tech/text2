@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>المشاريع والتطبيقات — الذكاء الاصطناعي وتعلّم الآلة</title>
+  <meta name="description" content="ستة تطبيقات عملية للذكاء الاصطناعي وتعلّم الآلة: المساعدات الذكية، التعرّف على الصور، أنظمة التوصية، اكتشاف الاحتيال، الطب، والروبوتات.">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="88">🤖</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>/* انظر assets/css/style.css */</style>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <symbol id="i-chip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6.5" y="6.5" width="11" height="11" rx="2"/><rect x="10" y="10" width="4" height="4" rx="1"/>
+      <path d="M9 3v3.5M15 3v3.5M9 17.5V21M15 17.5V21M3 9h3.5M3 15h3.5M17.5 9H21M17.5 15H21"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 6l12 12M18 6 6 18"/>
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 7h16M4 12h16M4 17h16"/>
+    </symbol>
+    <symbol id="i-chev-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 6l-6 6 6 6"/>
+    </symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 9V5a2 2 0 0 1 2-2h4M15 3h4a2 2 0 0 1 2 2v4M21 15v4a2 2 0 0 1-2 2h-4M9 21H5a2 2 0 0 1-2-2v-4"/>
+      <circle cx="9.5" cy="10" r="1.2" fill="currentColor" stroke="none"/><circle cx="14.5" cy="10" r="1.2" fill="currentColor" stroke="none"/>
+      <path d="M9.5 14.2a3.6 3.6 0 0 0 5 0"/>
+    </symbol>
+  </svg>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html">
+        <span class="brand-badge"><svg class="icon"><use href="#i-chip"/></svg></span>
+        الذكاء الاصطناعي وتعلّم الآلة
+      </a>
+      <button class="nav-toggle" type="button" aria-label="فتح قائمة التنقل" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon"><use href="#i-menu"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="التنقل الرئيسي">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="projects.html" aria-current="page">المشاريع</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>المشاريع والتطبيقات</h1>
+        <p>ستة تطبيقات عملية يوظّف فيها الذكاء الاصطناعي وتعلّم الآلة، مع نبذة مبسّطة عن كيفية عمل كل منها.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="grid-cards">
+
+        <article class="proj-card card reveal" id="p1">
+          <div class="proj-media">
+            <img src="assets/images/proj-1.svg" alt="رسم توضيحي لفقاعة حوار وأيقونة مايكروفون، يعبر عن المساعدات الذكية ومعالجة اللغة الطبيعية" width="600" height="400" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <h3>المساعدات الذكية ومعالجة اللغة الطبيعية</h3>
+            <p>أنظمة تفهم اللغة البشرية وتحللها وترد عليها بشكل طبيعي. تُستخدم في المساعدات الصوتية وروبوتات المحادثة، وتتحسن دقتها كلما زادت النصوص التي تتدرب عليها.</p>
+            <button class="link-arrow" type="button" data-modal
+              data-title="المساعدات الذكية ومعالجة اللغة الطبيعية"
+              data-text="تحوّل الأنظمة الكلام إلى نص ثم تحلّل النحو والمعنى قبل توليد رد مناسب. تستخدم تقنيات مثل تحويل النص إلى كلام وفهم السياق، وتدخل في المساعدات الصوتية في الهواتف، وروبوتات الدردشة في مواقع الشركات، والترجمة الآلية الفورية بين اللغات.">
+              عرض مزيد من المعلومات <svg class="icon"><use href="#i-chev-left"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="proj-card card reveal" id="p2">
+          <div class="proj-media">
+            <img src="assets/images/proj-2.svg" alt="رسم توضيحي لمؤشرات تعرف على الوجه داخل إطار مسح، يعبر عن التعرّف على الصور والوجوه" width="600" height="400" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <h3>التعرّف على الصور والوجوه</h3>
+            <p>يتعلّم النظام ملامح الصور ويقارنها بأنماط تدرب عليها مسبقًا. يدخل في فتح الهاتف بالوجه، وتنظيم مكتبة الصور، والمساعدة في تحليل الصور الطبية.</p>
+            <button class="link-arrow" type="button" data-modal
+              data-title="التعرّف على الصور والوجوه"
+              data-text="تعتمد هذه الأنظمة على شبكات عصبية تُسمى الشبكات التلافيفية؛ تفحص الصورة طبقة بعد طبقة لتتعلم الحواف ثم الأشكال ثم الملامح الكاملة، وتقارن ما تختصره من ملامح بقاعدة بيانات الوجوه أو الأشياء المعروفة. تظهر في فتح الهواتف بقفل الوجه، وتصنيف الصور تلقائيًا، وفرز المنتجات بصورة واحدة.">
+              عرض مزيد من المعلومات <svg class="icon"><use href="#i-chev-left"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="proj-card card reveal" id="p3">
+          <div class="proj-media">
+            <img src="assets/images/proj-3.svg" alt="رسم توضيحي لزر تشغيل ونجمة، يعبر عن أنظمة التوصية بالأفلام والمنتجات" width="600" height="400" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <h3>أنظمة التوصية بالأفلام والمنتجات</h3>
+            <p>تحلل سلوك المستخدم وتفضيلات أشخاص مشابهين له لتقترح محتوى ملائمًا. تشكل اليوم جزءًا أساسيًا من منصات المشاهدة والتسوق عبر الإنترنت.</p>
+            <button class="link-arrow" type="button" data-modal
+              data-title="أنظمة التوصية بالأفلام والمنتجات"
+              data-text="تعمل الأنظمة بمنهجين رئيسيين: التصفية التعاونية التي تقترح ما أحبّه أشخاص يشتركون معك في نفس الأذواق، والتصفية القائمة على المحتوى التي تقارن خصائص العناصر مع سجل مشاهداتك. كلما تفاعلت مع المنصة تعلّمت هذه الأنظمة أكثر ودقت توصياتها.">
+              عرض مزيد من المعلومات <svg class="icon"><use href="#i-chev-left"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="proj-card card reveal" id="p4">
+          <div class="proj-media">
+            <img src="assets/images/proj-4.svg" alt="رسم توضيحي لدرع مع علامة تنبيه، يعبر عن اكتشاف الاحتيال وتحليل المعاملات" width="600" height="400" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <h3>اكتشاف الاحتيال وتحليل المعاملات</h3>
+            <p>تراقب الأنظمة ملايين المعاملات المالية لحظة بلحظة وتكتشف الأنماط غير المعتادة. تحيل الحالات المشبوهة للمراجعة البشرية قبل وقوع الخسارة.</p>
+            <button class="link-arrow" type="button" data-modal
+              data-title="اكتشاف الاحتيال وتحليل المعاملات"
+              data-text="يتدرب النظام على أمثلة لتعاملات صحيحة ومحتالة، فيتعلم ملف كل عميل الطبيعي: المبالغ المعتادة، الأوقات، المواقع. حين يظهر سلوك مختلف كثيرًا — مثل عملية فجائية في دولة بعيدة — يحذر فعليًا ويرفع الحالة للفريق المختص، ويقلل بذلك خسائر مالية بالملايين سنويًا.">
+              عرض مزيد من المعلومات <svg class="icon"><use href="#i-chev-left"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="proj-card card reveal" id="p5">
+          <div class="proj-media">
+            <img src="assets/images/proj-5.svg" alt="رسم توضيحي لمربع مستدير فيه علامة زائد طبية، يعبر عن الذكاء الاصطناعي في الطب" width="600" height="400" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <h3>الذكاء الاصطناعي في الطب</h3>
+            <p>تساعد أدوات الذكاء الاصطناعي الأطباء في قراءة صور الأشعة والإشارة إلى مؤشرات مبكرة للمرض. ويبقى القرار النهائي دائمًا بيد الطبيب المشرف.</p>
+            <button class="link-arrow" type="button" data-modal
+              data-title="الذكاء الاصطناعي في الطب"
+              data-text="تتدرب النماذج على مجموعات ضخمة من الصور الطبية المصرح بها، فتتعلم ملامح الحالات المرضية وتبرزها للطبيب كمساعدة لا كبديل. تشمل التطبيقات فحص صور أشعة الصدر والعين، وتلخيص التقارير، وتسريع البحث الدوائي؛ مع إقياد صارم يضمن أن القرار النهائي يظل بشريًا.">
+              عرض مزيد من المعلومات <svg class="icon"><use href="#i-chev-left"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="proj-card card reveal" id="p6">
+          <div class="proj-media">
+            <img src="assets/images/proj-6.svg" alt="رسم توضيحي لرأس روبوت بخط واحد، يعبر عن الروبوتات والقيادة الذاتية" width="600" height="400" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <h3>الروبوتات والقيادة الذاتية</h3>
+            <p>يجمع الروبوت الذكي بين الإدراك والتخطيط والتحكم في الحركة. وتُبنى أنظمة السيارات ذاتية القيادة على نفس المبادئ داخل المستودعات والطرق.</p>
+            <button class="link-arrow" type="button" data-modal
+              data-title="الروبوتات والقيادة الذاتية"
+              data-text="تجمع هذه الأنظمة إدراكًا عبر الكاميرات والمستشعرات، وتخطيطًا ليسلك الطريق الأنسب، وتحكمًا في المحركات. في السيارات ذاتية القيادة تشمل المهام التعرف على المشاة ولوحات الطريق، وتوقع حركة المحيط، مع مستويات أمان متعددة تشرف عليها كلها.">
+              عرض مزيد من المعلومات <svg class="icon"><use href="#i-chev-left"/></svg>
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="center">
+        <a class="btn" href="contact.html">
+          للاستفسار والمصادر
+          <svg class="icon"><use href="#i-chev-left"/></svg>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- النافذة المنبثقة -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <button class="modal-backdrop" type="button" aria-label="إغلاق النافذة"></button>
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="إغلاق النافذة">
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+      <span class="modal-kicker">تفاصيل إضافية</span>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-text"></p>
+    </div>
+  </div>
+
+  <!-- التذييل -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <span class="icon-badge"><svg class="icon"><use href="#i-chip"/></svg></span>
+            الذكاء الاصطناعي وتعلّم الآلة
+          </div>
+          <p>موقع تعليمي مبسّط يقدّم مفاهيم الذكاء الاصطناعي وتعلّم الآلة للجمهور العربي بأسلوب واضح ومختصر.</p>
+        </div>
+        <nav class="footer-links" aria-label="روابط التذييل">
+          <h3>صفحات الموقع</h3>
+          <ul>
+            <li><a href="index.html">الرئيسية — العرض التقديمي</a></li>
+            <li><a href="projects.html">المشاريع والتطبيقات</a></li>
+            <li><a href="contact.html">تواصل معنا والمصادر</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copyright">© 2026 مشروع تعليمي — جميع المحتويات لأغراض التعليم والتبسيط.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

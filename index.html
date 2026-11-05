@@ -1,388 +1,431 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>بكسل أرينا | صالة قيمنق ومتجر ألعاب في الرياض</title>
-  <meta name="description" content="بكسل أرينا: صالة قيمنق في حي العليا بالرياض. أجهزة PC وPS5 وVR، غرف VIP خاصة، بطولات أسبوعية، وركن لبيع الألعاب. احجز جلستك عبر واتساب.">
-  <meta name="theme-color" content="#07070d">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <title>الذكاء الاصطناعي وتعلّم الآلة — عرض تعليمي</title>
+  <meta name="description" content="عرض تقديمي تعليمي من 6 شرائح يشرح مفهوم الذكاء الاصطناعي وتعلّم الآلة وأنواعه وتطبيقاته ومستقبله، مع صفحة مشاريع ومصادر موثوقة.">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="88">🤖</text></svg>'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script>document.documentElement.classList.add("js");</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">تجاوز إلى المحتوى</a>
 
+  <!-- مكتبة الأيقونات -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <symbol id="i-chip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6.5" y="6.5" width="11" height="11" rx="2"/><rect x="10" y="10" width="4" height="4" rx="1"/>
+      <path d="M9 3v3.5M15 3v3.5M9 17.5V21M15 17.5V21M3 9h3.5M3 15h3.5M17.5 9H21M17.5 15H21"/>
+    </symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 14a2 2 0 0 1-2 2H8l-5 5V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 12.5h5"/>
+    </symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="9" y="3" width="6" height="10.5" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17.5V21"/>
+    </symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><ellipse cx="12" cy="12" rx="4" ry="8.5"/>
+    </symbol>
+    <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="5.5" rx="8" ry="3"/>
+      <path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>
+    </symbol>
+    <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13 2 4.5 13.5H11l-1 8.5L18.5 10H12z"/>
+    </symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="8" y="2" width="8" height="4" rx="1"/>
+      <path d="M16 4h2a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 13.5l2 2 4-4"/>
+    </symbol>
+    <symbol id="i-cluster" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="7" cy="7.5" r="2.4"/><circle cx="16.5" cy="6.5" r="3"/><circle cx="15" cy="16" r="3.4"/><circle cx="6.5" cy="17" r="2.1"/>
+    </symbol>
+    <symbol id="i-medal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="9" r="5"/><path d="M9.5 13.5 8 21l4-2 4 2-1.5-7.5"/>
+    </symbol>
+    <symbol id="i-cross-med" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="4" width="16" height="16" rx="5"/><path d="M12 8.5v7M8.5 12h7"/>
+    </symbol>
+    <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+    </symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 11.5 6.7 6.6A2 2 0 0 1 8.6 5.2h6.8a2 2 0 0 1 1.9 1.4L19 11.5"/>
+      <path d="M3 11.5h18v4.3h-2.1M3 11.5v4.3h2.1M9.3 15.8h5.4"/>
+      <circle cx="7.4" cy="16.6" r="1.6"/><circle cx="16.6" cy="16.6" r="1.6"/>
+    </symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="7.5" width="18" height="12.5" rx="2"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5M3 12.5h18"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3l7.5 2.8v5.3c0 4.8-3.3 7.9-7.5 9.9-4.2-2-7.5-5.1-7.5-9.9V5.8z"/><path d="M9 12l2.2 2.2L15 10.4"/>
+    </symbol>
+    <symbol id="i-warning" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 4 2.5 20h19L12 4z"/><path d="M12 10v4.5M12 17.9h.01"/>
+    </symbol>
+    <symbol id="i-chev-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 6l-6 6 6 6"/>
+    </symbol>
+    <symbol id="i-chev-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 6l6 6-6 6"/>
+    </symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12a9 9 0 1 1-9-9c2.5 0 4.9 1 6.6 2.6L21 8"/><path d="M21 3v5h-5"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 12.5l5 5L20 6.5"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 6l12 12M18 6 6 18"/>
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 7h16M4 12h16M4 17h16"/>
+    </symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 16 16 8M9 8h7v7"/>
+    </symbol>
+  </svg>
+
+  <!-- شريط التنقل -->
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="بكسل أرينا — الصفحة الرئيسية">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6.5 8.5h11a4 4 0 0 1 3.9 4.9l-.7 3.4a2.6 2.6 0 0 1-4.6 1.2l-1.4-1.7H9.3l-1.4 1.7a2.6 2.6 0 0 1-4.6-1.2l-.7-3.4a4 4 0 0 1 3.9-4.9Z"/>
-            <path d="M8 11v3M6.5 12.5h3"/>
-            <circle cx="16" cy="11.8" r=".7" fill="currentColor"/>
-            <circle cx="18" cy="13.5" r=".7" fill="currentColor"/>
-          </svg>
-        </span>
-        <span class="brand-text">
-          <span class="brand-name">بكسل أرينا</span>
-          <span class="brand-sub">PIXEL ARENA</span>
-        </span>
+    <div class="container nav-row">
+      <a class="brand" href="index.html">
+        <span class="brand-badge"><svg class="icon"><use href="#i-chip"/></svg></span>
+        الذكاء الاصطناعي وتعلّم الآلة
       </a>
-
-      <nav class="nav" id="site-nav" aria-label="التنقل الرئيسي">
-        <ul class="nav-list">
-          <li><a class="nav-link is-active" href="index.html" aria-current="page">الرئيسية</a></li>
-          <li><a class="nav-link" href="services.html">الخدمات</a></li>
-          <li><a class="nav-link" href="about.html">عنّا</a></li>
-          <li><a class="nav-link" href="contact.html">تواصل</a></li>
+      <button class="nav-toggle" type="button" aria-label="فتح قائمة التنقل" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon"><use href="#i-menu"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="التنقل الرئيسي">
+        <ul>
+          <li><a href="index.html" aria-current="page">الرئيسية</a></li>
+          <li><a href="projects.html">المشاريع</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
         </ul>
-        <a class="btn btn-primary nav-cta" href="https://wa.me/966551234567?text=مرحبًا%20بكسل%20أرينا،%20أبغى%20أحجز%20جلسة" target="_blank" rel="noopener noreferrer">
-          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5.1 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.1 15.1l-.4-.2-3 .8.8-2.9-.2-.4a8.1 8.1 0 0 1 6.9-12.4Zm-3.2 4.1c-.2 0-.5.1-.7.4-.2.3-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.9.8 2.3.6 2.7.6.4 0 1.3-.5 1.5-1.1.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.4-.3l-1.5-.7c-.2-.1-.4-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1-.2-.1-.9-.3-1.8-1.1-.7-.6-1.1-1.3-1.3-1.5-.1-.2 0-.3.1-.4l.4-.5c.1-.2.1-.3.2-.5.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5Z"/></svg>
-          احجز جلسة
-        </a>
       </nav>
-
-      <div class="header-actions">
-        <a class="btn btn-primary header-cta" href="https://wa.me/966551234567?text=مرحبًا%20بكسل%20أرينا،%20أبغى%20أحجز%20جلسة" target="_blank" rel="noopener noreferrer">
-          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5.1 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.1 15.1l-.4-.2-3 .8.8-2.9-.2-.4a8.1 8.1 0 0 1 6.9-12.4Zm-3.2 4.1c-.2 0-.5.1-.7.4-.2.3-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.9.8 2.3.6 2.7.6.4 0 1.3-.5 1.5-1.1.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.4-.3l-1.5-.7c-.2-.1-.4-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1-.2-.1-.9-.3-1.8-1.1-.7-.6-1.1-1.3-1.3-1.5-.1-.2 0-.3.1-.4l.4-.5c.1-.2.1-.3.2-.5.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5Z"/></svg>
-          احجز جلسة
-        </a>
-        <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
     </div>
   </header>
 
-  <main id="main">
-    <!-- الترحيب -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <span class="eyebrow"><span class="eyebrow-dot"></span> صالة قيمنق في قلب الرياض</span>
-          <h1>العب على أجهزة <span class="gradient-text">تستحقك.</span></h1>
-          <p class="hero-lead">
-            بكسل أرينا مساحة للاعبين في حي العليا: أجهزة قوية، غرف خاصة، بطولات أسبوعية،
-            وركن ألعاب تختار منه قبل ما تبدأ. جيب أصحابك، واحجزوا مقعدكم.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/966551234567?text=مرحبًا%20بكسل%20أرينا،%20أبغى%20أحجز%20جلسة" target="_blank" rel="noopener noreferrer">
-              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5.1 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.1 15.1l-.4-.2-3 .8.8-2.9-.2-.4a8.1 8.1 0 0 1 6.9-12.4Zm-3.2 4.1c-.2 0-.5.1-.7.4-.2.3-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.9.8 2.3.6 2.7.6.4 0 1.3-.5 1.5-1.1.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.4-.3l-1.5-.7c-.2-.1-.4-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1-.2-.1-.9-.3-1.8-1.1-.7-.6-1.1-1.3-1.3-1.5-.1-.2 0-.3.1-.4l.4-.5c.1-.2.1-.3.2-.5.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5Z"/></svg>
-              احجز عبر واتساب
-            </a>
-            <a class="btn btn-ghost" href="services.html">
-              استكشف الخدمات
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
-            </a>
-          </div>
-          <div class="hero-stats">
-            <div class="hero-stat"><strong>42</strong><span>جهاز لعب</span></div>
-            <div class="hero-stat"><strong>8</strong><span>غرف VIP</span></div>
-            <div class="hero-stat"><strong>4.9</strong><span>تقييم اللاعبين</span></div>
-          </div>
-        </div>
+  <main>
+    <!-- العرض التقديمي -->
+    <section class="presentation" aria-label="العرض التقديمي: الذكاء الاصطناعي وتعلّم الآلة">
+      <div class="container slider" data-slider>
 
-        <div class="hero-visual reveal">
-          <div class="hero-art">
-            <img src="assets/hero.svg" alt="ركن قيمنق بشاشة كبيرة وإضاءة بنفسجية وجهاز كمبيوتر في بكسل أرينا" width="900" height="700">
-          </div>
-          <div class="float-badge float-badge--open">
-            <span class="live-dot" aria-hidden="true"></span>
-            <div>
-              <strong>مفتوح الآن</strong>
-              <small>نستقبلك حتى 2:00 ص</small>
+        <!-- الشريحة 1: الغلاف -->
+        <section class="slide slide-cover is-active" id="slide-1" data-slide role="group" aria-roledescription="شريحة" aria-label="الشريحة 1 من 6: الغلاف والتعريف">
+          <div class="cover-grid">
+            <div class="cover-text">
+              <span class="kicker cover-tag">عرض تقديمي تعليمي</span>
+              <h1>الذكاء الاصطناعي وتعلّم الآلة</h1>
+              <p class="lead">كيف تستطيع الآلات التعلّم من البيانات ومساعدتنا في حل المشكلات؟</p>
+              <button class="btn btn-light btn-lg" type="button" data-goto="1">
+                ابدأ العرض
+                <svg class="icon"><use href="#i-chev-left"/></svg>
+              </button>
             </div>
+            <img class="cover-img" src="assets/images/cover.svg" alt="رسم توضيحي لشبكة عصبية متصلة حول معالج يحمل حرفي AI، يعبّر عن الذكاء الاصطناعي" width="800" height="500">
           </div>
-          <div class="float-badge float-badge--rating">
-            <div>
-              <strong><span class="rating-star">★</span> 4.9 / 5</strong>
-              <span class="rating-stars" aria-hidden="true">★★★★★</span>
-              <small>من أكثر من 280 تقييم</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- المميزات -->
-    <section class="section" aria-labelledby="features-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">ليش بكسل أرينا؟</span>
-          <h2 class="section-title" id="features-title">كل شي تحتاجه لجلسة لعب كاملة</h2>
-          <p class="section-text">
-            من أول ما تدخل إلى آخر جولة، كل التفاصيل مجهزة عشان تركز على اللعب بس.
-          </p>
-        </div>
-
-        <div class="features-grid">
-          <article class="feature-card reveal">
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2.5" y="4" width="19" height="13" rx="2.5"/>
-                <path d="M8 21h8M12 17v4"/>
-                <path d="M7 10.5h2M8 9.5v2M15.5 10h.01M17.5 11.5h.01"/>
-              </svg>
-            </span>
-            <h3>أجهزة بمستوى احترافي</h3>
-            <p>أجهزة RTX، شاشات 240Hz، PS5 وXbox Series X، وماوس ولوحات ميكانيكية. كل مقعد مجهز من أول لحظة.</p>
-          </article>
-
-          <article class="feature-card reveal">
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="3"/>
-                <path d="M3 9h18"/>
-                <path d="M12 9v12"/>
-                <circle cx="7.5" cy="6" r=".8" fill="currentColor"/>
-                <circle cx="16.5" cy="15.5" r="1.6"/>
-              </svg>
-            </span>
-            <h3>جلسات وغرف خاصة</h3>
-            <p>غرف VIP عازلة للصوت تتسع لأربعة لاعبين، مناسبة للفرق، تجمعات الأصدقاء، والمناسبات الصغيرة.</p>
-          </article>
-
-          <article class="feature-card reveal">
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0Z"/>
-                <path d="M7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3"/>
-                <path d="m12 8 .8 1.7 1.7.8-1.7.8L12 13l-.8-1.7-1.7-.8 1.7-.8Z" fill="currentColor" stroke="none"/>
-              </svg>
-            </span>
-            <h3>بطولات ومجتمع</h3>
-            <p>بطولات أسبوعية بجوائز، أمسيات مفتوحة للتعارف، ومجموعة واتساب تجمع لاعبين الرياض على مدار الأسبوع.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- الصور -->
-    <section class="section section--tight" aria-labelledby="gallery-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">جوّا المكان</span>
-          <h2 class="section-title" id="gallery-title">شوف وين بتلعب</h2>
-          <p class="section-text">
-            أركان متعددة تحت سقف واحد: PC، كونسول، VR، محاكي سباقات، وغرف خاصة.
-          </p>
-        </div>
-
-        <div class="gallery-grid">
-          <figure class="gallery-item gallery-item--featured reveal">
-            <img src="assets/games-store.webp" alt="رفوف ألعاب PS5 وXbox وأجهزة كونسول في ركن المتجر" width="960" height="540" loading="lazy">
-            <figcaption class="gallery-caption">
-              <strong>ركن المتجر</strong>
-              <span>ألعاب وإكسسوارات وبطاقات شحن</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery-item reveal">
-            <img src="assets/pc.svg" alt="جهاز كمبيوتر قيمنق بإضاءة RGB" width="800" height="600" loading="lazy">
-            <figcaption class="gallery-caption">
-              <strong>أركان PC</strong>
-              <span>RTX وشاشات 240Hz</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery-item reveal">
-            <img src="assets/console.svg" alt="شاشة كونسول كبيرة مع يد تحكم" width="800" height="600" loading="lazy">
-            <figcaption class="gallery-caption">
-              <strong>أركان الكونسول</strong>
-              <span>PS5 وXbox على شاشات 4K</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery-item reveal">
-            <img src="assets/vr.svg" alt="نظارة واقع افتراضي بإضاءة نيون" width="800" height="600" loading="lazy">
-            <figcaption class="gallery-caption">
-              <strong>تجربة VR</strong>
-              <span>مساحة لعب آمنة وإشراف</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery-item reveal">
-            <img src="assets/racing.svg" alt="محاكي سباقات بمقود وشاشة منحنية" width="800" height="600" loading="lazy">
-            <figcaption class="gallery-caption">
-              <strong>محاكي السباقات</strong>
-              <span>مقود برد فعل حقيقي</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery-item reveal">
-            <img src="assets/lounge.svg" alt="غرفة VIP بأريكة وإضاءة نيون" width="800" height="600" loading="lazy">
-            <figcaption class="gallery-caption">
-              <strong>غرف VIP</strong>
-              <span>خصوصية وراحة لأربعة لاعبين</span>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- الآراء -->
-    <section class="section" aria-labelledby="reviews-title">
-      <div class="container">
-        <div class="section-head section-head--center reveal">
-          <span class="kicker">كلام اللاعبين</span>
-          <h2 class="section-title" id="reviews-title">ناس صارت جزء من المكان</h2>
-          <p class="section-text">تقييمات من زوار بكسل أرينا خلال آخر سنة.</p>
-        </div>
-
-        <div class="testimonials-grid">
-          <article class="quote-card reveal">
-            <div class="quote-stars" aria-label="تقييم 5 من 5">★★★★★</div>
-            <blockquote>
-              «المكان اللي نجتمع فيه كل خميس. الأجهزة سريعة، والغرفة الخاصة تخليك تلعب بدون إزعاج.
-              فريق المكان يعرف يشرح لك أي شي تحتاجه.»
-            </blockquote>
-            <div class="quote-person">
-              <span class="avatar" aria-hidden="true">ع</span>
+        <!-- الشريحة 2: مفهوم الذكاء الاصطناعي -->
+        <section class="slide" id="slide-2" data-slide role="group" aria-roledescription="شريحة" aria-label="الشريحة 2 من 6: مفهوم الذكاء الاصطناعي" hidden>
+          <div class="slide-body">
+            <div class="slide-grid">
               <div>
-                <strong>عبدالله الحربي</strong>
-                <span>لاعب PC — الرياض</span>
+                <span class="kicker">الشريحة الثانية</span>
+                <h2>مفهوم الذكاء الاصطناعي</h2>
+                <p class="callout">
+                  الذكاء الاصطناعي مجال يهدف إلى تطوير أنظمة تنفّذ مهامًا تتطلب عادةً قدرات بشرية،
+                  مثل فهم اللغة والتعرّف على الصور واتخاذ القرارات.
+                </p>
+                <div class="example-rows">
+                  <article class="example-card">
+                    <span class="icon-badge"><svg class="icon"><use href="#i-mic"/></svg></span>
+                    <div>
+                      <h3>المساعدات الصوتية</h3>
+                      <p>مثل المساعدات في الهواتف التي تجيب على أسئلتك وتنفّذ طلباتك بعدة لغات.</p>
+                    </div>
+                  </article>
+                  <article class="example-card">
+                    <span class="icon-badge"><svg class="icon"><use href="#i-globe"/></svg></span>
+                    <div>
+                      <h3>الترجمة الآلية</h3>
+                      <p>ترجمة النصوص والمحادثات بين اللغات في لحظات أثناء التصفح والسفر.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="slide-media">
+                <img src="assets/images/ai-concept.svg" alt="رسم توضيحي لفقاعات حوار ومنطقة مايكروفون وكرة أرضية يمثل فهم اللغة والترجمة الآلية" width="760" height="520" loading="lazy">
               </div>
             </div>
-          </article>
+          </div>
+        </section>
 
-          <article class="quote-card reveal">
-            <div class="quote-stars" aria-label="تقييم 5 من 5">★★★★★</div>
-            <blockquote>
-              «حجزت غرفة VIP لعيد ميلاد أخوي، ورتبوا لنا كل شي: أجهزة، مشروبات، وحتى بطولة صغيرة.
-              التجربة كانت مرتبة وهادية.»
-            </blockquote>
-            <div class="quote-person">
-              <span class="avatar avatar--cyan" aria-hidden="true">ن</span>
-              <div>
-                <strong>نورة القحطاني</strong>
-                <span>زائرة — حي العليا</span>
-              </div>
-            </div>
-          </article>
+        <!-- الشريحة 3: تعلّم الآلة -->
+        <section class="slide" id="slide-3" data-slide role="group" aria-roledescription="شريحة" aria-label="الشريحة 3 من 6: ما تعلّم الآلة" hidden>
+          <div class="slide-body">
+            <span class="kicker">الشريحة الثالثة</span>
+            <h2>تعلّم الآلة — كيف تتعلّم الحواسيب؟</h2>
+            <p class="callout">
+              تعلّم الآلة أحد فروع الذكاء الاصطناعي، يمكّن الأنظمة من اكتشاف الأنماط في البيانات
+              وتحسين أدائها مع الخبرة، دون برمجتها بكل خطوة يدويًا.
+            </p>
+            <ol class="steps" aria-label="مراحل تعلّم الآلة">
+              <li class="step">
+                <span class="step-num" aria-hidden="true">1</span>
+                <span class="step-icon"><svg class="icon"><use href="#i-database"/></svg></span>
+                <strong>جمع البيانات</strong>
+                <small>نوفر أمثلة كافية ومتنوعة</small>
+              </li>
+              <li class="step">
+                <span class="step-num" aria-hidden="true">2</span>
+                <span class="step-icon"><svg class="icon"><use href="#i-chip"/></svg></span>
+                <strong>تدريب النموذج</strong>
+                <small>يتعلّم النموذج من الأمثلة</small>
+              </li>
+              <li class="step">
+                <span class="step-num" aria-hidden="true">3</span>
+                <span class="step-icon"><svg class="icon"><use href="#i-target"/></svg></span>
+                <strong>اختبار النتائج</strong>
+                <small>نقيس الدقة على أمثلة جديدة</small>
+              </li>
+              <li class="step">
+                <span class="step-num" aria-hidden="true">4</span>
+                <span class="step-icon"><svg class="icon"><use href="#i-bolt"/></svg></span>
+                <strong>استخدام النموذج</strong>
+                <small>تشغيله في المهام الحقيقية</small>
+              </li>
+            </ol>
+            <p class="note">
+              <svg class="icon"><use href="#i-chip"/></svg>
+              <span>مثال توضيحي: نُدرِّب نظامًا على آلاف صور القطط والكلاب، فيتعلّم مميزات كلٍّ منهما، ثم يستطيع التمييز بينهما في صور لم يرها من قبل.</span>
+            </p>
+          </div>
+        </section>
 
-          <article class="quote-card reveal">
-            <div class="quote-stars" aria-label="تقييم 5 من 5">★★★★★</div>
-            <blockquote>
-              «بطولاتهم منظمة والوقت محسوب بدقة. جيت أول مرة لحالي وطلعت أعرف نص الشباب اللي هنا.
-              صار عندنا فريق ثابت.»
-            </blockquote>
-            <div class="quote-person">
-              <span class="avatar avatar--amber" aria-hidden="true">ف</span>
-              <div>
-                <strong>فيصل الشمري</strong>
-                <span>قائد فريق — Valorant</span>
-              </div>
+            <!-- الشريحة 4: أنواع تعلّم الآلة -->
+        <section class="slide" id="slide-4" data-slide role="group" aria-roledescription="شريحة" aria-label="الشريحة 4 من 6: أهم أنواع تعلّم الآلة" hidden>
+          <div class="slide-body">
+            <span class="kicker">الشريحة الرابعة</span>
+            <h2>أهم أنواع تعلّم الآلة</h2>
+            <p>تقع معظم تطبيقات تعلّم الآلة تحت ثلاثة أنواع رئيسية، يختلف كل منها في طريقة تعلّمه:</p>
+            <div class="type-grid">
+              <article class="type-card">
+                <span class="icon-badge"><svg class="icon"><use href="#i-clipboard"/></svg></span>
+                <h3>التعلّم الخاضع للإشراف</h3>
+                <p>يتعلّم النموذج من بيانات تتضمن الإجابات الصحيحة، ثم يتنبأ بالإجابة لبيانات جديدة.</p>
+                <p class="type-example"><svg class="icon"><use href="#i-bolt"/></svg><span>مثال: التنبؤ بأسعار المنازل انطلاقًا من مساحتها وموقعها.</span></p>
+              </article>
+              <article class="type-card">
+                <span class="icon-badge"><svg class="icon"><use href="#i-cluster"/></svg></span>
+                <h3>التعلّم غير الخاضع للإشراف</h3>
+                <p>يكتشف الأنماط والمجموعات الظاهرة داخل البيانات دون إجابات جاهزة مقدّمة له.</p>
+                <p class="type-example"><svg class="icon"><use href="#i-bolt"/></svg><span>مثال: تقسيم العملاء إلى مجموعات بحسب سلوك الشراء.</span></p>
+              </article>
+              <article class="type-card">
+                <span class="icon-badge"><svg class="icon"><use href="#i-medal"/></svg></span>
+                <h3>التعلّم بالتعزيز</h3>
+                <p>يتعلّم النظام من التجربة عبر المكافآت عند النجاح والعقوبات عند الخطأ.</p>
+                <p class="type-example"><svg class="icon"><use href="#i-bolt"/></svg><span>مثال: تدريب روبوت على المشي حتى يتقن الحركة.</span></p>
+              </article>
             </div>
-          </article>
+          </div>
+        </section>
+
+        <!-- الشريحة 5: التطبيقات والفوائد والتحديات -->
+        <section class="slide" id="slide-5" data-slide role="group" aria-roledescription="شريحة" aria-label="الشريحة 5 من 6: التطبيقات والفوائد والتحديات" hidden>
+          <div class="slide-body">
+            <span class="kicker">الشريحة الخامسة</span>
+            <h2>أين نستخدم الذكاء الاصطناعي؟</h2>
+            <ul class="apps-grid">
+              <li class="app-card">
+                <span class="icon-badge"><svg class="icon"><use href="#i-cross-med"/></svg></span>
+                <strong>الطب</strong>
+                <small>المساعدة في تحليل الصور الطبية واكتشاف المؤشرات المبكرة</small>
+              </li>
+              <li class="app-card">
+                <span class="icon-badge"><svg class="icon"><use href="#i-book"/></svg></span>
+                <strong>التعليم</strong>
+                <small>تخصيص التعلّم وتقديم مساعدة فورية للطلاب</small>
+              </li>
+              <li class="app-card">
+                <span class="icon-badge"><svg class="icon"><use href="#i-car"/></svg></span>
+                <strong>النقل</strong>
+                <small>دعم أنظمة القيادة الذاتية والملاحة الذكية</small>
+              </li>
+              <li class="app-card">
+                <span class="icon-badge"><svg class="icon"><use href="#i-briefcase"/></svg></span>
+                <strong>الأعمال</strong>
+                <small>تحليل البيانات وتحسين خدمة العملاء</small>
+              </li>
+              <li class="app-card">
+                <span class="icon-badge"><svg class="icon"><use href="#i-shield"/></svg></span>
+                <strong>الأمن الرقمي</strong>
+                <small>اكتشاف الأنشطة غير المعتادة والاحتيال</small>
+              </li>
+            </ul>
+            <div class="challenges">
+              <h3 class="challenges-title"><svg class="icon"><use href="#i-warning"/></svg> تحديات تستحق الانتباه</h3>
+              <ul class="ch-list">
+                <li><svg class="icon"><use href="#i-warning"/></svg><span>حماية الخصوصية:</span> التعامل السليم مع بيانات الأشخاص.</li>
+                <li><svg class="icon"><use href="#i-warning"/></svg><span>التحيّز في البيانات:</span> نتيجة غير عادلة إن كانت البيانات متحيّزة.</li>
+                <li><svg class="icon"><use href="#i-warning"/></svg><span>الأخطاء المحتملة:</span> النموذج قد يخطئ في تنبؤاته.</li>
+                <li><svg class="icon"><use href="#i-warning"/></svg><span>الإشراف البشري:</span> يبقى التقييم والقرار النهائي للإنسان.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- الشريحة 6: الخاتمة والمستقبل -->
+        <section class="slide" id="slide-6" data-slide role="group" aria-roledescription="شريحة" aria-label="الشريحة 6 من 6: الخاتمة والمستقبل" hidden>
+          <div class="slide-body">
+            <div class="slide-grid">
+              <div>
+                <span class="kicker">الشريحة السادسة</span>
+                <h2>مستقبل الذكاء الاصطناعي وتعلّم الآلة</h2>
+                <p class="callout">
+                  الذكاء الاصطناعي مجال واسع، وتعلّم الآلة أحد أهم فروعه؛ ونجاح هذه التقنيات
+                  يعتمد على جودة البيانات، والتقييم البشري، والاستخدام المسؤول.
+                </p>
+                <blockquote class="quote">«المستقبل ليس للآلات وحدها، بل لمن يحسن استخدامها»</blockquote>
+                <div class="btn-row">
+                  <button class="btn" type="button" data-goto="0">
+                    <svg class="icon"><use href="#i-refresh"/></svg>
+                    إعادة العرض
+                  </button>
+                  <a class="btn btn-ghost" href="projects.html">
+                    استعرض المشاريع
+                    <svg class="icon"><use href="#i-chev-left"/></svg>
+                  </a>
+                </div>
+              </div>
+              <aside class="mini-sources">
+                <h3><svg class="icon"><use href="#i-book"/></svg> مصادر موثوقة للتوسّع</h3>
+                <ul class="source-list">
+                  <li>
+                    <a href="https://www.ibm.com/think/topics/artificial-intelligence" target="_blank" rel="noopener">
+                      <svg class="icon"><use href="#i-external"/></svg>
+                      <span>IBM — ما الذكاء الاصطناعي؟<small>شرح مبسّط لأهم المفاهيم الأساسية</small></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.google.com/machine-learning/intro-to-ml" target="_blank" rel="noopener">
+                      <svg class="icon"><use href="#i-external"/></svg>
+                      <span>Google — مقدمة إلى تعلّم الآلة<small>مقدمة عملية موجهة للمتعلّمين والمطورين</small></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://hai.stanford.edu/ai-index" target="_blank" rel="noopener">
+                      <svg class="icon"><use href="#i-external"/></svg>
+                      <span>Stanford — مؤشر الذكاء الاصطناعي<small>تقرير سنوي بأرقام وتطورات المجال</small></span>
+                    </a>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- شريط التحكم بالشرائح -->
+      <div class="container slider-bar">
+        <button class="btn btn-ghost btn-icon" id="prevBtn" type="button" aria-label="الشريحة السابقة" disabled>
+          <svg class="icon"><use href="#i-chev-right"/></svg>
+        </button>
+        <div class="dots" role="group" aria-label="مؤشر الشرائح">
+          <button class="dot" type="button" data-goto="0" aria-label="الانتقال إلى الشريحة 1" aria-current="true"></button>
+          <button class="dot" type="button" data-goto="1" aria-label="الانتقال إلى الشريحة 2"></button>
+          <button class="dot" type="button" data-goto="2" aria-label="الانتقال إلى الشريحة 3"></button>
+          <button class="dot" type="button" data-goto="3" aria-label="الانتقال إلى الشريحة 4"></button>
+          <button class="dot" type="button" data-goto="4" aria-label="الانتقال إلى الشريحة 5"></button>
+          <button class="dot" type="button" data-goto="5" aria-label="الانتقال إلى الشريحة 6"></button>
         </div>
+        <p class="counter" id="slideCounter" aria-live="polite">الشريحة 1 من 6</p>
+        <button class="btn btn-ghost btn-icon" id="nextBtn" type="button" aria-label="الشريحة التالية">
+          <svg class="icon"><use href="#i-chev-left"/></svg>
+        </button>
       </div>
     </section>
 
-    <!-- دعوة للحجز -->
-    <section class="section section--tight">
+    <!-- مشاريع مختارة -->
+    <section class="featured" aria-labelledby="featured-title">
       <div class="container">
-        <div class="cta-band reveal">
-          <div>
-            <h2>جاهز تجيب العداد؟</h2>
-            <p>احجز مقعدك أو غرفتك قبل ما توصل، وخلّ الباقي علينا. متاحين يوميًا من 2 الظهر إلى 2 بعد منتصف الليل.</p>
-          </div>
-          <div class="cta-actions">
-            <a class="btn btn-light" href="https://wa.me/966551234567?text=مرحبًا%20بكسل%20أرينا،%20أبغى%20أحجز%20جلسة" target="_blank" rel="noopener noreferrer">
-              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5.1 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.1 15.1l-.4-.2-3 .8.8-2.9-.2-.4a8.1 8.1 0 0 1 6.9-12.4Zm-3.2 4.1c-.2 0-.5.1-.7.4-.2.3-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.9.8 2.3.6 2.7.6.4 0 1.3-.5 1.5-1.1.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.4-.3l-1.5-.7c-.2-.1-.4-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1-.2-.1-.9-.3-1.8-1.1-.7-.6-1.1-1.3-1.3-1.5-.1-.2 0-.3.1-.4l.4-.5c.1-.2.1-.3.2-.5.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5Z"/></svg>
-              احجز الآن
-            </a>
-            <a class="btn btn-ghost" href="contact.html">موقعنا وساعات العمل</a>
-          </div>
+        <div class="section-head">
+          <h2 id="featured-title">مشاريع وتطبيقات مختارة</h2>
+          <p>نماذج سريعة لمجالات يُحدث الذكاء الاصطناعي فيها تأثيرًا ملموسًا في حياتنا اليومية.</p>
+        </div>
+        <div class="grid-cards">
+          <article class="proj-card card reveal">
+            <div class="proj-media">
+              <img src="assets/images/proj-1.svg" alt="رسم توضيحي لفقاعة حوار وأيقونة مايكروفون، يعبر عن المساعدات الذكية ومعالجة اللغة" width="600" height="400" loading="lazy">
+            </div>
+            <div class="proj-body">
+              <h3>المساعدات الذكية ومعالجة اللغة الطبيعية</h3>
+              <p>أنظمة تفهم اللغة البشرية وتحللها وترد عليها بشكل طبيعي، وتُستخدم في المساعدات الصوتية وخدمة العملاء.</p>
+              <a class="link-arrow" href="projects.html#p1">اعرف المزيد <svg class="icon"><use href="#i-chev-left"/></svg></a>
+            </div>
+          </article>
+          <article class="proj-card card reveal">
+            <div class="proj-media">
+              <img src="assets/images/proj-4.svg" alt="رسم توضيحي لدرع مع علامة تنبيه، يعبر عن اكتشاف الاحتيال في المعاملات المالية" width="600" height="400" loading="lazy">
+            </div>
+            <div class="proj-body">
+              <h3>اكتشاف الاحتيال وتحليل المعاملات</h3>
+              <p>أنظمة تراقب ملايين المعاملات المالية لحظة بلحظة وتحير الأنماط غير المعتادة للمراجعة قبل وقوع الخسارة.</p>
+              <a class="link-arrow" href="projects.html#p4">اعرف المزيد <svg class="icon"><use href="#i-chev-left"/></svg></a>
+            </div>
+          </article>
+          <article class="proj-card card reveal">
+            <div class="proj-media">
+              <img src="assets/images/proj-5.svg" alt="رسم توضيحي لمربع مستدير فيه علامة زائد طبية، يعبر عن الذكاء الاصطناعي في الطب" width="600" height="400" loading="lazy">
+            </div>
+            <div class="proj-body">
+              <h3>الذكاء الاصطناعي في الطب</h3>
+              <p>أدوات تساعد الأطباء في قراءة صور الأشعة والإشارة إلى مؤشرات مبكرة للمرض مع بقاء القرار النهائي بشريًا.</p>
+              <a class="link-arrow" href="projects.html#p5">اعرف المزيد <svg class="icon"><use href="#i-chev-left"/></svg></a>
+            </div>
+          </article>
+        </div>
+        <div class="center">
+          <a class="btn" href="projects.html">
+            كل المشاريع
+            <svg class="icon"><use href="#i-chev-left"/></svg>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- التذييل -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="brand" href="index.html" aria-label="بكسل أرينا — الصفحة الرئيسية">
-            <span class="brand-mark" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6.5 8.5h11a4 4 0 0 1 3.9 4.9l-.7 3.4a2.6 2.6 0 0 1-4.6 1.2l-1.4-1.7H9.3l-1.4 1.7a2.6 2.6 0 0 1-4.6-1.2l-.7-3.4a4 4 0 0 1 3.9-4.9Z"/>
-                <path d="M8 11v3M6.5 12.5h3"/>
-                <circle cx="16" cy="11.8" r=".7" fill="currentColor"/>
-                <circle cx="18" cy="13.5" r=".7" fill="currentColor"/>
-              </svg>
-            </span>
-            <span class="brand-text">
-              <span class="brand-name">بكسل أرينا</span>
-              <span class="brand-sub">PIXEL ARENA</span>
-            </span>
-          </a>
-          <p>صالة قيمنق ومتجر ألعاب في الرياض. مساحة تجمع اللاعبين على أجهزة قوية، غرف خاصة، وبطولات تنافسية.</p>
-          <div class="socials">
-            <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="إنستغرام بكسل أرينا">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
-            </a>
-            <a class="social-link" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="تيك توك بكسل أرينا">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.4 2.2 1.8 3.7 4 4v3c-1.5 0-2.9-.5-4-1.3v6.6c0 3.6-2.4 5.7-5.5 5.7A5.3 5.3 0 0 1 5.7 15c0-3.3 2.7-5.6 6.2-5.3v3.1c-1.7-.3-3.1.7-3.1 2.2 0 1.4 1 2.4 2.3 2.4 1.4 0 2.3-1 2.3-2.7V3Z"/></svg>
-            </a>
-            <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="إكس بكسل أرينا">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.7 3H21l-7.2 8.2L22.2 21H15.5l-5.2-6.2L4.3 21H1l7.7-8.8L1.8 3h6.8l4.7 5.6Zm-1.2 16h1.9L7.5 4.9H5.5Z"/></svg>
-            </a>
+        <div>
+          <div class="footer-brand">
+            <span class="icon-badge"><svg class="icon"><use href="#i-chip"/></svg></span>
+            الذكاء الاصطناعي وتعلّم الآلة
           </div>
+          <p>موقع تعليمي مبسّط يقدّم مفاهيم الذكاء الاصطناعي وتعلّم الآلة للجمهور العربي بأسلوب واضح ومختصر.</p>
         </div>
-
-        <div>
-          <h3 class="footer-title">روابط سريعة</h3>
-          <ul class="footer-links">
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="services.html">الخدمات والأسعار</a></li>
-            <li><a href="about.html">عنّا</a></li>
-            <li><a href="contact.html">تواصل معنا</a></li>
+        <nav class="footer-links" aria-label="روابط التذييل">
+          <h3>صفحات الموقع</h3>
+          <ul>
+            <li><a href="index.html">الرئيسية — العرض التقديمي</a></li>
+            <li><a href="projects.html">المشاريع والتطبيقات</a></li>
+            <li><a href="contact.html">تواصل معنا والمصادر</a></li>
           </ul>
-        </div>
-
-        <div>
-          <h3 class="footer-title">تواصل</h3>
-          <ul class="footer-links footer-contact">
-            <li>
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg>
-              <span>الرياض، حي العليا، طريق الملك فهد</span>
-            </li>
-            <li>
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a12 12 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.2 2 2 0 0 1 5 3Z"/></svg>
-              <a href="tel:+966551234567" dir="ltr">+966 55 123 4567</a>
-            </li>
-            <li>
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
-              <a href="mailto:hello@pixelarena.sa" dir="ltr">hello@pixelarena.sa</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="footer-title">ساعات العمل</h3>
-          <ul class="footer-links">
-            <li>السبت – الخميس: 2 م – 2 ص</li>
-            <li>الجمعة: 2 م – 3 ص</li>
-          </ul>
-          <span class="hours-badge">مفتوح الآن</span>
-        </div>
+        </nav>
       </div>
-
-      <div class="footer-bottom">
-        <p>© <span data-year>2026</span> بكسل أرينا. جميع الحقوق محفوظة.</p>
-        <p>صُنع بحب للاعبين في الرياض.</p>
-      </div>
+      <p class="copyright">© 2026 مشروع تعليمي — جميع المحتويات لأغراض التعليم والتبسيط.</p>
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/966551234567?text=مرحبًا%20بكسل%20أرينا،%20أبغى%20أحجز%20جلسة" target="_blank" rel="noopener noreferrer" aria-label="تواصل مع بكسل أرينا عبر واتساب">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5.1 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.1 15.1l-.4-.2-3 .8.8-2.9-.2-.4a8.1 8.1 0 0 1 6.9-12.4Zm-3.2 4.1c-.2 0-.5.1-.7.4-.2.3-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.9.8 2.3.6 2.7.6.4 0 1.3-.5 1.5-1.1.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.4-.3l-1.5-.7c-.2-.1-.4-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1-.2-.1-.9-.3-1.8-1.1-.7-.6-1.1-1.3-1.3-1.5-.1-.2 0-.3.1-.4l.4-.5c.1-.2.1-.3.2-.5.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5Z"/></svg>
-  </a>
-
-  <script src="script.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
